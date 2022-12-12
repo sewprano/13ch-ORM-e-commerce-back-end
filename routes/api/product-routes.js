@@ -76,7 +76,7 @@ router.post('/', async (req, res) => {
 });
 
 // update product
-router.put('/:id', await (req, res) => {
+router.put('/:id', async (req, res) => {
   // update product data
   try {
     await Product.update(req.body, {
